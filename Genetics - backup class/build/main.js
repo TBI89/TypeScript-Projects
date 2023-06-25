@@ -1,0 +1,13 @@
+import Backup from "./backup.js";
+import Kitten from "./kitten.js";
+const userName = new Backup("First Name", "David");
+console.log(userName.displayBackup());
+const userAge = new Backup("Age", 33);
+console.log(userAge.displayBackup());
+const userIsSingle = new Backup("Single", false);
+console.log(userIsSingle.displayBackup());
+const dateOfBirth = new Backup("Date of Birth", new Date(1989, 11, 24));
+console.log(dateOfBirth.displayBackup());
+console.log("---------------------");
+const pet = new Backup("Pet Info", new Kitten("Gini", 6, true));
+console.log(pet.displayBackup());
